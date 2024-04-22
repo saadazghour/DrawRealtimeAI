@@ -10,7 +10,10 @@
 /coverage
 
 #
-/.vscode
+/.vscode/*
+
+#
+/.yarn/*
 
 # next.js
 /.next/
