@@ -1,5 +1,7 @@
 # Draw Real Time AI
 
+### Draw Real Time AI - Instant, real-time text to image conversion with Excalidraw, WebSockets, Next.js, and Fal.ai
+
 ## Introduction
 
 **Draw Real Time AI** is a cutting-edge Application that harnesses the power of AI to generate real-time, visually engaging content directly from textual descriptions. Built using Next.js and integrated with Excalidraw and the Fal.ai serverless platform, this Application demonstrates the seamless blend of text to image transformation capabilities in a dynamic, user-driven environment.
@@ -41,8 +43,9 @@ Ensure you have the following installed:
 
 ### Configuration
 
-    1. Rename `.env.local.example` to `.env.local`.
-    2. Insert your Fal.ai API key in the `.env.local` file. You can find your API key on the [Fal.ai Dashboard](https://www.fal.ai/dashboard/keys).
+- Rename `.env.local.example` to `.env.local`.
+
+- Insert your Fal.ai API key in the `.env.local` file. You can find your API key on the [Fal.ai Dashboard](https://www.fal.ai/dashboard/keys).
 
 ### Running the Application
 
@@ -50,9 +53,9 @@ Ensure you have the following installed:
 
   ```sh
    yarn run dev
-
-   The app will be available at http://localhost:3000.
   ```
+
+* The app will be available at http://localhost:3000
 
 ### How It Works
 
@@ -63,4 +66,4 @@ Ensure you have the following installed:
 
 ### Contributing
 
-- Contributions are welcome! For major changes, please open an issue first to discuss what you would like to change. Ensure to update tests as appropriate.
+- Contributions are welcome!! Please fork the repository and submit pull requests to contribute. For major changes, please open an issue first to discuss what you would like to change. Please ensure to update tests as appropriate.
