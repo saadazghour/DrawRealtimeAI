@@ -14,19 +14,17 @@
     "@fal-ai/serverless-proxy": "^0.7.4",
     "next": "14.2.3",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "tslib": "^2.6.2"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@types/node": "^20.12.7",
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.0",
-    "eslint": "^8",
+    "eslint": "^9.1.1",
     "eslint-config-next": "14.2.3",
     "eslint-config-prettier": "^9.1.0",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3",
     "typescript": "^5.4.5"
-  },
-  "packageManager": "yarn@4.1.1"
+  }
 }
