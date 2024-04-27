@@ -12,21 +12,21 @@
     "@excalidraw/excalidraw": "^0.17.6",
     "@fal-ai/serverless-client": "^0.9.3",
     "@fal-ai/serverless-proxy": "^0.7.4",
-    "next": "14.2.2",
-    "react": "^18",
-    "react-dom": "^18",
+    "next": "14.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "tslib": "^2.6.2"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
     "eslint": "^8",
-    "eslint-config-next": "14.2.2",
+    "eslint-config-next": "14.2.3",
     "eslint-config-prettier": "^9.1.0",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5"
   },
   "packageManager": "yarn@4.1.1"
 }
