@@ -11,9 +11,7 @@
   <p>Watch our application in action as it transforms text into images in real-time.</p>
   <br/>
 
-[![Draw Real Time AI Demo](https://github.com/saadazghour/DrawRealtimeAI/assets/draw_real_time_ai.mp4)](https://github.com/saadazghour/DrawRealtimeAI/assets/draw_real_time_ai.mp4)
-
-[DEMO](https://github.com/saadazghour/DrawRealtimeAI/assets/draw_real_time_ai.mp4)
+[![Draw Real Time AI Demo](https://github.com/saadazghour/DrawRealtimeAI/blob/main/public/assets/draw_real_time_ai.webm)](https://github.com/saadazghour/DrawRealtimeAI/blob/main/public/assets/draw_real_time_ai.webm)
 
 </div>
 
