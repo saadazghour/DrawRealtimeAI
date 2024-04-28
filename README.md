@@ -11,7 +11,7 @@
   
   <p>Watch our application in action as it transforms text into images in real-time.</p>
 
-  <iframe src="https://player.vimeo.com/video/939641815" width="600" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <iframe src="https://player.vimeo.com/video/939641815?h=171834daf2" width="600" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 </div>
 
