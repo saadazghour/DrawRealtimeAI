@@ -13,8 +13,6 @@
 
   <iframe src="https://player.vimeo.com/video/939641815" width="600" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-https://github.com/saadazghour/DrawRealtimeAI/blob/main/public/assets/draw_real_time_ai.webm
-
 </div>
 
 ## ✨ Features
