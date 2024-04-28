@@ -1,7 +1,38 @@
 {
-  "extends": "next/core-web-vitals",
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@nx/react-typescript",
+    "next",
+    "../../.eslintrc.json"
+  ],
   "rules": {
     "react/no-unescaped-entities": "off",
     "@next/next/no-page-custom-font": "off"
-  }
+  },
+  "ignorePatterns": ["!**/*", ".next/**/*"]
+  // "overrides": [
+  //   {
+  //     "files": ["*.*"],
+  //     "rules": {
+  //       "@next/next/no-html-link-for-pages": "off"
+  //     }
+  //   },
+  //   {
+  //     "files": ["*.ts", "*.tsx", "*.js", "*.jsx"]
+  //   },
+  //   {
+  //     "files": ["*.ts", "*.tsx"],
+  //     "rules": {}
+  //   },
+  //   {
+  //     "files": ["*.js", "*.jsx"],
+  //     "rules": {}
+  //   },
+  //   {
+  //     "files": ["*.spec.ts", "*.spec.tsx", "*.spec.js", "*.spec.jsx"],
+  //     "env": {
+  //       "jest": true
+  //     }
+  //   }
+  // ]
 }
