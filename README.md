@@ -8,10 +8,10 @@
 
 <div align="center">
   <h3 align="center">Draw Real Time AI: Live Demo</h3>
+  
   <p>Watch our application in action as it transforms text into images in real-time.</p>
-  <br/>
 
-[![Draw Real Time AI Demo](https://github.com/saadazghour/DrawRealtimeAI/blob/main/public/assets/draw_real_time_ai.webm)](https://github.com/saadazghour/DrawRealtimeAI/blob/main/public/assets/draw_real_time_ai.webm)
+  <iframe src="https://player.vimeo.com/video/939641815" width="600" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 </div>
 
