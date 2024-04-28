@@ -1,14 +1,32 @@
 "use client";
 
+// Ensure they're only called in a browser environment.
+if (typeof window !== "undefined") {
+  (window as any).EXCALIDRAW_ASSET_PATH = "/excalidraw/dist";
+}
+
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
+// Since Excalidraw doesn't support server side rendering so it should be rendered only on client. The way to achieve this in next.js is using next.js dynamic import.
+
+const Excalidraw = dynamic(
+  async () => (await import("@excalidraw/excalidraw")).Excalidraw,
+  {
+    ssr: false, // This tells Next.js to only import this component on the client-side
+  }
+);
+
 import {
-  Excalidraw,
   exportToBlob, // Export our canvas to an image
   serializeAsJSON, // Serialize our canvas to JSON. To only update when canvas it's change
 } from "@excalidraw/excalidraw";
 
 import { useState } from "react";
 import * as fal from "@fal-ai/serverless-client";
+
+import { ExcalidrawElement } from "@excalidraw/excalidraw/types/element/types";
+import { AppState } from "@excalidraw/excalidraw/types/types";
 
 // ***** Setup the proxy
 
@@ -99,9 +117,13 @@ export default function Home() {
       <div className="flex">
         <div className="w-[636px] h-[570px]">
           <Excalidraw
-            excalidrawAPI={(api) => setExcalidrawAPI(api)}
-            // This callback is triggered whenever the component updates due to any change. This callback will receive the excalidraw elements and the current app state.
-            onChange={async (elements, appState) => {
+            autoFocus={true}
+            excalidrawAPI={(api: any) => setExcalidrawAPI(api)}
+            // This callback is triggered wh  enever the component updates due to any change. This callback will receive the excalidraw elements and the current app state.
+            onChange={async (
+              elements: readonly ExcalidrawElement[],
+              appState: Partial<AppState>
+            ) => {
               const newSyncData = serializeAsJSON(
                 elements,
                 appState,
