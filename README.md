@@ -13,6 +13,8 @@
 
 [![Draw Real Time AI Demo](https://github.com/saadazghour/DrawRealtimeAI/blob/main/public/assets/draw_real_time_ai.webm)](https://github.com/saadazghour/DrawRealtimeAI/blob/main/public/assets/draw_real_time_ai.webm)
 
+https://github.com/saadazghour/DrawRealtimeAI/blob/main/public/assets/draw_real_time_ai.webm
+
 </div>
 
 ## ✨ Features
