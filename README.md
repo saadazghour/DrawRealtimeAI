@@ -6,6 +6,17 @@
 
 **Draw Real Time AI** is a cutting-edge Application that harnesses the power of AI to generate real-time, visually engaging content directly from textual descriptions. Built using Next.js and integrated with Excalidraw and the Fal.ai serverless platform, this Application demonstrates the seamless blend of text to image transformation capabilities in a dynamic, user-driven environment.
 
+<div align="center">
+  <h3 align="center">Draw Real Time AI: Live Demo</h3>
+  <p>Watch our application in action as it transforms text into images in real-time.</p>
+  <br/>
+
+[![Draw Real Time AI Demo](https://github.com/saadazghour/DrawRealtimeAI/assets/draw_real_time_ai.mp4)](https://github.com/saadazghour/DrawRealtimeAI/assets/draw_real_time_ai.mp4)
+
+[DEMO](https://github.com/saadazghour/DrawRealtimeAI/assets/draw_real_time_ai.mp4)
+
+</div>
+
 ## ✨ Features
 
 - 🖼️ **Real-Time Image Generation**: Convert textual descriptions into high-quality images in real time.
