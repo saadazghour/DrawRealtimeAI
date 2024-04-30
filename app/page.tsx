@@ -1,14 +1,10 @@
 "use client";
 
-// Ensure they're only called in a browser environment.
-if (typeof window !== "undefined") {
-  (window as any).EXCALIDRAW_ASSET_PATH = "/excalidraw/dist";
-}
-
 import { useState } from "react";
 import Image from "next/image";
 import { DrawingCanvas } from "~@/components/DrawingCanvas";
 import * as fal from "@fal-ai/serverless-client";
+
 
 // ***** Setup the proxy
 

@@ -22,6 +22,9 @@ export type DrawingCanvasProps = {
   onCanvasChange: (event: CanvasChangeEvent) => void;
 };
 
+// Ensure they're only called in a browser environment.
+const isBrowser = typeof window !== "undefined";
+
 export async function blobToBase64(blob: Blob): Promise<string> {
   return await new Promise((resolve) => {
     let reader = new FileReader();
@@ -42,21 +45,23 @@ export function DrawingCanvas({ onCanvasChange }: DrawingCanvasProps) {
   const [syncData, setSyncData] = useState<any>(null);
 
   useEffect(() => {
-    import("@excalidraw/excalidraw").then((comp) =>
-      setExcalidrawComponent(comp.Excalidraw)
-    );
+    if (isBrowser) {
+      import("@excalidraw/excalidraw").then((comp) =>
+        setExcalidrawComponent(comp.Excalidraw)
+      );
 
-    const onResize = () => {
-      if (excalidrawAPI) {
-        excalidrawAPI.refresh();
-      }
-    };
+      const onResize = () => {
+        if (excalidrawAPI) {
+          excalidrawAPI.refresh();
+        }
+      };
 
-    window.addEventListener("resize", onResize);
+      window.addEventListener("resize", onResize);
 
-    return () => {
-      window.removeEventListener("resize", onResize);
-    };
+      return () => {
+        window.removeEventListener("resize", onResize);
+      };
+    }
   }, []);
 
   async function handleCanvasChanges(
@@ -94,7 +99,7 @@ export function DrawingCanvas({ onCanvasChange }: DrawingCanvasProps) {
       });
 
       const imageData = await blobToBase64(blob);
-      
+
       return onCanvasChange({
         elements,
         appState,
