@@ -12,6 +12,7 @@
 
 # IDE settings
 /.vscode/
+/.history/
 
 
 # next.js
