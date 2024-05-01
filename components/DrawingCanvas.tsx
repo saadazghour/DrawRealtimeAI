@@ -34,7 +34,7 @@ export async function blobToBase64(blob: Blob): Promise<string> {
   }).then((e: any) => e.target.result);
 }
 
-export function DrawingCanvas({ onCanvasChange }: DrawingCanvasProps) {
+const DrawingCanvas = ({ onCanvasChange }: DrawingCanvasProps) => {
   const [excalidrawAPI, setExcalidrawAPI] =
     useState<ExcalidrawImperativeAPI | null>(null);
 
@@ -120,4 +120,6 @@ export function DrawingCanvas({ onCanvasChange }: DrawingCanvasProps) {
       )}
     </div>
   );
-}
+};
+
+export default DrawingCanvas;

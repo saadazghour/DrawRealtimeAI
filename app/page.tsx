@@ -2,9 +2,16 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { DrawingCanvas } from "~@/components/DrawingCanvas";
 import * as fal from "@fal-ai/serverless-client";
 
+import dynamic from "next/dynamic";
+
+const DrawingCanvas = dynamic(
+  () => import("~@/DrawingCanvas").then((mod) => mod.default),
+  {
+    ssr: false,
+  }
+);
 
 // ***** Setup the proxy
 
