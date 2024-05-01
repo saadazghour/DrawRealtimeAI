@@ -1,9 +1,6 @@
 {
   "extends": [
-    "next/core-web-vitals",
-    "plugin:@nx/react-typescript",
-    "next",
-    "../../.eslintrc.json"
+    "next/core-web-vitals"
   ],
   "rules": {
     "react/no-unescaped-entities": "off",
