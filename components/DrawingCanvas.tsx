@@ -62,7 +62,7 @@ export function DrawingCanvas({ onCanvasChange }: DrawingCanvasProps) {
         window.removeEventListener("resize", onResize);
       };
     }
-  }, []);
+  }, [excalidrawAPI]);
 
   async function handleCanvasChanges(
     elements: readonly ExcalidrawElement[],
