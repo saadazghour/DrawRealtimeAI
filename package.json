@@ -12,6 +12,7 @@
     "@excalidraw/excalidraw": "^0.17.6",
     "@fal-ai/serverless-client": "^0.9.3",
     "@fal-ai/serverless-proxy": "^0.7.4",
+    "@vercel/analytics": "^1.2.2",
     "next": "14.2.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
